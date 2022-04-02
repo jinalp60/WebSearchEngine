@@ -29,6 +29,8 @@ public class WebSearchEngine {
 			wc.HTMLToTextconverter();
 
 			SearchWord searchWord = new SearchWord();
+			SpellChecking sc = new SpellChecking();
+			sc.getVocab(); 
 			while(true) {
 				System.out.println("------------------------------------------------------------\n");
 				System.out.println("Please enter the word which you want to search or type quit : \n");
@@ -36,7 +38,20 @@ public class WebSearchEngine {
 				if(wordToSearch.equals("quit")) {
 					break;
 				} else {
-					searchWord.searchForWord(wordToSearch, webPagesNames);
+					
+					
+					if(!sc.isCorrect(wordToSearch)){
+						String s[] = sc.getAltWords(wordToSearch); 
+						System.out.println("The word might be misspelled!"); 
+						System.out.println("The top ten suggestions include: "); 
+						for(int i=0; i<10; i++){
+							System.out.println(s[i]); 
+						}
+					}
+					else {
+						searchWord.searchForWord(wordToSearch, webPagesNames);
+					}
+					
 				}
 			} 
 			
