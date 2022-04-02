@@ -1,0 +1,529 @@
+<!doctype html><!--[if IE 8]><html class="ie ie8"> <![endif]--><!--[if IE 9]><html class="ie ie9"> <![endif]--><!--[if gt IE 9]><!-->
+<html> <!--<![endif]--> 
+ <head> <!-- Basic --> 
+  <meta charset="utf-8"> 
+  <title>Online Development and Testing Tools</title> 
+  <meta name="description" content="Online Development and Testing Tools like Image Editor, Latex Editor, XML Editor, JSON Editor, Coding Ground, Whiteboard"> 
+  <meta name="Keywords" content="Online, Development, Tools, Testing, Image Editor, Latex Editor, XML Editor, JSON Editor, Coding Ground, Whiteboard"> 
+  <base href="https://www.tutorialspoint.com/"> 
+  <link rel="canonical" href="https://www.tutorialspoint.com/online_dev_tools"> 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes"> 
+  <meta property="og:locale" content="en_US"> 
+  <meta property="og:type" content="website"> 
+  <meta property="fb:app_id" content="471319149685276"> 
+  <meta property="og:site_name" content="www.tutorialspoint.com"> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="author" content="tutorialspoint.com"> 
+  <script type="text/javascript" src="https://www.tutorialspoint.com/themes/js/script-min-v1.js"></script> 
+  <link rel="stylesheet" href="https://www.tutorialspoint.com/themes/css/style-min.css?v=1.42122"> 
+  <script src="/themes/home/fontawesome.js?v=1.3"></script> <!--<link rel="stylesheet" href="https://www.tutorialspoint.com/market/public/assets/js/fontawesome.js?v=1.11">--> 
+  <script>
+function openNav() {	
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("right_obs").style.display = "block";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("right_obs").style.display = "none";
+}
+function close_obs_sidenav(){
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("right_obs").style.display = "none";
+}
+</script> <!-- Head Libs --> <!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="/theme/css/ie8.css">
+<![endif]--> 
+  <style>
+select{ border:0 !important; outline: 1px inset black !important; outline-offset: -1px !important; }
+.btnsbmt{ background: #0B1F2B !important;}
+ul.nav-list.primary>li a.videolink{    background: none; margin: 0px; padding: 0px; border: 1px solid #d6d6d6;}
+div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright { background: #0B1F2B url(/images/pattern.png) repeat center center !important;}
+.sub-main-menu .sub-menuu div:hover, .sub-main-menu .viewall, header nav ul.nav-main li a:hover, button.btn-responsive-nav, header div.search button.btn-default { background: #0B1F2B !important;}
+.submenu-item{ border-bottom: 2px solid #0B1F2B !important; border-top: 2px solid #0B1F2B !important }
+.ace_scroller{overflow: auto!important;}
+a.demo{font-family: "Open Sans",Arial,sans-serif; background:#0B1F2B; color:#fff; font-size:13px; padding:3px 10px; border:1px solid #d6d6d6; position:absolute; right:5px; margin:-6px 17px 0px 0px;}
+a.demo:hover{opacity:.8}
+</style> 
+  <script>
+$(document).ready(function() {
+  $('input[name="q"]').keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script> 
+ </head> 
+ <body onload="prettyPrint()"> 
+  <div class="wrapLoader"> 
+   <div class="imgLoader"> 
+    <img src="/images/loading-cg.gif" alt="" width="70" height="70"> 
+   </div> 
+  </div> 
+  <div id="right_obs" class="display-none" onclick="close_obs_sidenav()"></div> 
+  <header id="header"> <!-- pop-up --> 
+   <div class="pop-modal overlay-pop popdiv"> 
+    <div class="modal-window small"> <span class="close" title="close">×</span> 
+     <div class="pop-content"> 
+     </div> <span class="msg"></span> 
+    </div> 
+   </div> 
+   <div class="wrap_loader"> 
+    <div class="imgLoader">
+     <img src="/videotutorials/images/loader.gif" alt="Tutorialspoint" width="70" height="70">
+    </div> 
+   </div> 
+   <input type="hidden" id="vu" name="vu" value=""> <!-- pop-up --> <!-- Top sub-menu Starts Here --> 
+   <div class="mui-appbar mui-container-fulid top-menu"> 
+    <div class="mui-container"> 
+     <div class="top-menu-item home"> <a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fa fa-home"></i> <span>Home</span></a> 
+     </div> 
+     <div class="top-menu-item qa"> <a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a> 
+     </div> 
+     <div class="top-menu-item tools"> <a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fa fa-cogs"></i> <span>Tools</span></a> 
+     </div> 
+     <div class="top-menu-item coding-ground"> <a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fa fa-code"></i> <span>Coding Ground </span></a> 
+     </div> 
+     <div class="top-menu-item current-affairs"> <a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fa fa-layer-plus"></i> <span>Current Affairs</span></a> 
+     </div> 
+     <div class="top-menu-item upsc-notes"> <a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fa fa-user-tie"></i> <span>UPSC Notes</span></a> 
+     </div> 
+     <div class="top-menu-item articles"> <a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fa fa-user"></i> <span>Online Tutors</span></a> 
+     </div> 
+     <div class="top-menu-item whiteboard"> <a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fa fa-chalkboard"></i> <span>Whiteboard</span></a> 
+     </div> <!--<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>--> 
+     <div class="top-menu-item articles"> <a href="https://www.tutorix.com" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fa fa-video"></i> <span>Tutorix</span></a> 
+     </div> 
+     <div class="top-menu-item net-meeting"> <a href="https://www.tutorialspoint.com/market/login.asp?v=1.00" target="_blank" title="Login TutorialsPoint"><i class="fa fa-sign-in-alt"></i> <span>Login</span></a> 
+     </div> 
+     <div class="social-menu-item"> <a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fa fa-facebook-f"></i></a> <a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fa fa-linkedin-in"></i></a> <a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fa fa-youtube"></i></a> 
+     </div> 
+    </div> 
+   </div> <!-- Top sub-menu Ends Here --> <!-- Top main-menu Starts Here --> 
+   <div class="mui-appbar mui-container-fulid nav-menu mui--appbar-line-height mui--z1" id="logo-menu"> 
+    <div class="mui-container"> 
+     <div class="left-menu"> <a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint"> <img class="tp-logo" alt="tutorialspoint" src="/tools/images/logo.png"> </a> 
+      <div class="mui-dropdown"> <a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-solid"></i> <span>Categories <span class="fa fa-caret-down mui-caret"></span></span></a> 
+       <ul class="mui-dropdown__menu cat-menu"> 
+        <li> 
+         <ul> 
+          <li><a href="/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li> 
+          <li><a href="/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li> 
+          <li><a href="/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li> 
+          <li><a href="/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li> 
+          <li><a href="/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li> 
+          <li><a href="/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li> 
+          <li><a href="/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li> 
+          <li><a href="/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li> 
+          <li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li> 
+          <li><a href="/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li> 
+          <li><a href="/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li> 
+          <li><a href="/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li> 
+          <li><a href="/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li> 
+          <li><a href="/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li> 
+          <li><a href="/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li> 
+          <li><a href="/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li> 
+          <li><a href="/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li> 
+          <li><a href="/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li> 
+          <li><a href="/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li> 
+          <li><a href="/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li> 
+          <li><a href="/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li> 
+          <li><a href="/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li> 
+          <li><a href="/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li> 
+          <li><a href="/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li> 
+          <li><a href="/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li> 
+          <li><a href="/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li> 
+          <li><a href="/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li> 
+          <li><a href="/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li> 
+          <li><a href="/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li> 
+          <li><a href="/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li> 
+          <li><a href="/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li> 
+          <li><a href="/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li> 
+          <li><a href="/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li> 
+         </ul> </li> 
+       </ul> 
+       <div class="clear"></div> 
+      </div> 
+     </div> 
+     <div class="right-menu"> 
+      <div class="toc-toggle"> <a href="javascript:void(0);"><i class="fa fa-bars"></i></a> 
+      </div> 
+      <div class="mobile-search-btn"> <a href="https://www.tutorialspoint.com/index.htm"><i class="fa fa-search"></i></a> 
+      </div> <!--
+		<div class="search-box">
+		<script async src="https://cse.google.com/cse.js?cx=000263362972888060243:yfed6eu421q"></script>
+		<div class='gcse-search'></div>
+		</div>
+		--> 
+      <div class="search-box-wrap"> 
+       <div class="search-box" style=""> 
+        <div> 
+         <input class="input" type="text" id="search-strings" name="key" placeholder="Search latest courses, ebooks and prime packs..." autocomplete="off"> <button id="btnSearch"><i class="fa fa-search" title="Search"></i></button> 
+        </div> 
+       </div> 
+       <div class="search-box" id="search-results"></div> 
+       <div class="clear"></div> 
+       <script>
+				$('#search-strings').keyup(function () {
+					var keyword = $('#search-strings').val();
+					if (keyword != "" && keyword.length > 2) {
+						$.ajax({
+							url:"https://search.tutorialspoint.com/market_urls_suggestion.php",
+							method: "POST",
+					   type: 'POST',
+							dataType: "json",
+					   cache:false,
+							data: {
+								'keyword': keyword
+							},
+							error: function (err) {
+								console.log ( err );
+							},
+							success: function (data) {
+								if (data.length > 0) {
+							//var str = '<div class="search_title arrow_search">Search Results</div><ul>';
+							var str = '<div class="search-overlay"><ul>';
+							data.forEach((item) => {
+							   var iconStr = '<i class="fa fa-play-circle"></i>';
+							   if(item.type=='E'){
+								  iconStr = '<i class="fa fa-file-pdf"></i>';
+							   }
+							   if(item.type=='B'){
+								  iconStr = '<i class="fa fa-cubes"></i>';
+							   }
+							   if(item.type=='A' || item.type=='I' || item.type=='P'){ // profile/author/instructor
+								  iconStr = '<i class="fa fa-user"></i>';
+							   }
+							   str = str + '<a href="'+item.url+'" target="_blank"><li class="clsHeadQuestion">'+iconStr+' '+item.name+'</li></a>'; 
+							});
+							str = str + '</ul><br/></div><div class="clear"></div>';
+									$('#search-results').show();
+									$('#search-results').html(str);
+								} else {
+									$('#search-results').hide();
+									$('#search-results').html('');
+								}
+							}
+						});
+					}else{
+						$('#search-results').hide();
+						$('#search-results').html('');
+					}
+				});
+			 $('#btnSearch').click(function(){
+				   var keyword = $('#search-strings').val();
+				   window.location.href = "https://www.tutorialspoint.com/search/"+keyword;
+			 });
+			 $(document).mouseup(function(e) 
+			 {
+				 var container = $('#search-results');            
+				 if (!container.is(e.target) && container.has(e.target).length === 0) 
+				 {
+					 container.hide();
+				 }
+			 });
+			</script> 
+      </div> 
+      <div class="menu-btn videos-btn"> <a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a> 
+      </div> 
+      <div class="menu-btn library-btn"> <a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fa fa-books"></i> <span>Library</span></a> 
+      </div> 
+      <div class="menu-btn ebooks-btn"> <a href="https://www.tutorialspoint.com/latest/ebooks"><i class="fa fa-book-reader"></i> <span>eBooks</span></a> 
+      </div> 
+      <div class="menu-btn videos-btn"> <a href="https://www.tutorialspoint.com/latest/courses"><i class="fa fa-video"></i> <span>Courses</span></a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> <!-- Top main-menu Ends Here --> 
+  </header> 
+  <div style="clear:both;"></div> 
+  <style>header{padding:0px 0px!important;}</style> 
+  <div style="clear:both;"></div> 
+  <div role="main" class="main"> 
+   <div id="content" class="content full"> 
+    <div class="dev-tools-bg background"> <span class="cat-title">Development Tools</span> 
+     <div class="cat-punch-line">
+      <img src="/scripts/img/slides/slide-title-border.png" alt="border"><span> Frequently used Tools for Software's Professionals </span>
+      <img src="/scripts/img/slides/slide-title-border.png" alt="border">
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <br> 
+  <div class="container"> 
+   <div class="row"> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="https://www.tutorialspoint.com/online_image_editor.htm" title="Online Image Editor"> <img src="/images/image-editor-devtools.jpg" alt="Online Image Editor"> <h5>Image Editor</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_document_viewer.php" title="Online Document Viewer"> <img src="/images/image-document-viewer.jpg" alt="Online Document Viewer"> <h5>Document Viewer</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_image_optimizer.htm" title="Online Image Optimizer"> <img src="/images/img-optimizer-devtools.jpg" alt="Online Image Optimizer"> <h5>Image Optimizer</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="https://www.tutorialspoint.com/whiteboard.htm" title="Web Collaboration Whiteboard"> <img src="/images/whiteboard-devtools.jpg" alt="Web Collaboration Whiteboard"> <h5>Whiteboard</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="https://www.tutorialspoint.com/netmeeting.php" title="An Online Video Meeting Tool"> <img src="/images/netmeeting-devtools.jpg" alt="An Online Video Meeting Tool"> <h5>NetMeeting</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="https://www.tutorialspoint.com/online_latex_editor.php" title="Latex Online Editor"> <img src="/images/latex-editor-devtools.jpg" alt="Latex Online Editor"> <h5>Latex Editor</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="https://www.tutorialspoint.com/latex_equation_editor.htm" title="Latex Equation Editor"> <img src="/images/latex-equation-devtools.jpg" alt="Latex Equation Editor"> <h5>Latex Equation Editor</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_xml_editor.htm" title="Online XML Editor"> <img src="/images/xml-editor-devtools.jpg" alt="Online XML Editor"> <h5>XML Editor</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_json_editor.htm" title="Online JSON Editor"> <img src="/images/json-editor-devtools.jpg" alt="Online JSON Editor"> <h5>JSON Editor</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_sql_formatter.htm" title="Online SQL Formatter"> <img src="/images/sql-formatter-devtools.jpg" alt="Online SQL Formatter"> <h5>SQL Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_css_formatter.htm" title="Online CSS Formatter"> <img src="/images/css-formatter-devtools.jpg" alt="Online CSS Formatter"> <h5>CSS Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_xml_formatter.htm" title="Online XML Formatter"> <img src="/images/xml-formatter-devtools.jpg" alt="Online XML Formatter"> <h5>XML Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_json_formatter.htm" title="Online JSON Formatter"> <img src="/images/json-formatter-devtools.jpg" alt="Online JSON Formatter"> <h5>JSON Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_sql_minifier.htm" title="Online SQL Minifier"> <img src="/images/sql-minifier-devtools.jpg" alt="Online SQL Minifier"> <h5>SQL Minifier</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_css_minifier.htm" title="Online CSS Minifier"> <img src="/images/css-minifier-devtools.jpg" alt="Online CSS Formatter"> <h5>CSS Minifier</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_javascript_minifier.htm" title="Online Javascript Minifier"> <img src="/images/javascript-minifier-devtools.jpg" alt="Online Javascript Formatter"> <h5>Javascript Minifier</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_xml_minifier.htm" title="Online XML Minifier"> <img src="/images/xml-minifier-devtools.jpg" alt="Online XML Formatter"> <h5>XML Minifier</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_json_minifier.htm" title="Online JSON Minifier"> <img src="/images/json-minifier-devtools.jpg" alt="Online JSON Formatter"> <h5>JSON Minifier</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_c_formatter.htm" title="Online C Formatter"> <img src="/images/c-formatter-devtools.jpg" alt="Online C Formatter"> <h5>C/C++ Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_javascript_formatter.htm" title="Online Javascript Formatter"> <img src="/images/javascript-formatter-devtools.jpg" alt="Online Javascript Formatter"> <h5>Javascript Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_java_formatter.htm" title="Online Java Formatter"> <img src="/images/java-formatter-devtools.jpg" alt="Online Java Formatter"> <h5>Java Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_php_formatter.htm" title="Online PHP Formatter"> <img src="/images/php-formatter-devtools.jpg" alt="Online PHP Formatter"> <h5>PHP Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_perl_formatter.htm" title="Online Perl Formatter"> <img src="/images/perl-formatter-devtools.jpg" alt="Online Perl Formatter"> <h5>Perl Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_python_formatter.htm" title="Online Python Formatter"> <img src="/images/python-formatter-devtools.jpg" alt="Online Python Formatter"> <h5>Python Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_ruby_formatter.htm" title="Online Ruby Formatter"> <img src="/images/ruby-formatter-devtools.jpg" alt="Online Ruby Formatter"> <h5>Ruby Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_html_formatter.htm" title="Online HTML Formatter"> <img src="/images/html-formatter-devtools.jpg" alt="Online HTML Formatter"> <h5>HTML Formatter</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/whois_lookup.htm" title="Whois Lookup for a Website"> <img src="/images/whois-lookup-devtools.jpg" alt="Whois Lookup for a Website"> <h5>Whois Lookup</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_ping_test.htm" title="Online Ping Test"> <img src="/images/ping-test-devtools.jpg" alt="Online Ping Test"> <h5>Online Ping Test</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_trace_route.htm" title="Trace Route a Server Destination"> <img src="/images/trace-route-devtools.jpg" alt="Trace Route a Server Destination"> <h5>Trace Route a Server</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/dns_lookup.htm" title="DNS Lookup for a Website"> <img src="/images/dns-lookup-devtools.jpg" alt="DNS Lookup for a Website"> <h5>DNS Lookup</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/open_port_scan.htm" title="Open Port Scan for a Web Server"> <img src="/images/port-scan-devtools.jpg" alt="Open Port Scan for a Web Server"> <h5>Open Port Scan</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/online_os_detection.htm" title="Online OS Detection for a Website"> <img src="/images/os-detection-devtools.jpg" alt="Online OS Detection for a Website"> <h5>Online OS Detection</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/host_ip_lookup.htm" title="Host IP Lookup for a Website"> <img src="/images/host-ip-lookup-devtools.jpg" alt="Host IP Lookup for a Website"> <h5>Host IP Lookup</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/google_hacking_tests.htm" title="Google Hacking Tests"> <img src="/images/hacking-tests-devtools.jpg" alt="Google Hacking Tests"> <h5>Google Hacking Tests</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/verify_email_address.htm" title="Verify Email Address"> <img src="/images/verify-email-devtools.jpg" alt="Verify Email Address"> <h5>Verify Email Address</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/base64_encode_online.htm" title="Base64 Encode Online"> <img src="/images/base64-encode-devtools.jpg" alt="Base64 Encode Online"> <h5>Base64 Encoding</h5></a> 
+     </div> 
+    </div> 
+    <div class="col-md-3"> 
+     <div class="dev-box"> <a target="_top" href="http://www.tutorialspoint.com/base64_decode_online.htm" title="Base64 Decode Online"> <img src="/images/base64-decode-devtools.jpg" alt="Base64 Decode Online"> <h5>Base64 Decoding</h5></a> 
+     </div> 
+    </div> 
+    <h1 class="thick-heading">SELECTED READING</h1> 
+    <div class="selected-reading-boxes"> 
+     <div class="col-md-3"> 
+      <div class="course-box"> <a href="/developers_best_practices/index.htm" title="Developer's Best Practices"> <img src="/images/developers-best-practices-icon.png" class="big-icon" alt="Developer's Best Practices"> </a> 
+      </div> 
+     </div> 
+     <div class="col-md-3"> 
+      <div class="course-box"> <a href="/effective_resume_writing.htm" title="Effective Resume Writing"> <img src="/images/effective-resume-writing-icon.png" class="big-icon" alt="Effective Resume Writing"> </a> 
+      </div> 
+     </div> 
+     <div class="col-md-3"> 
+      <div class="course-box"> <a href="/computer_glossary.htm" title="Computer Glossary"> <img src="/images/computer-glossary-icon.png" class="big-icon" alt="Computer Glossary"> </a> 
+      </div> 
+     </div> 
+     <div class="col-md-3"> 
+      <div class="course-box"> <a href="/computer_whoiswho.htm" title="Who is Who in Computer"> <img src="/images/who-is-who-icon.png" class="big-icon" alt="Who is Who in Computer"> </a> 
+      </div> 
+     </div> 
+    </div> 
+    <br> 
+    <br> 
+    <div style="text-align: center;"> 
+    </div> 
+   </div> 
+  </div> 
+  <br> 
+  <footer class="inner"> 
+   <div class="container"> 
+    <div class="row"> 
+     <div class="footer-ribon"> <span>Extras</span> 
+     </div> 
+     <div class="col-md-2"> 
+      <h4>Mobile First</h4> 
+      <ul class="list icons list-unstyled"> 
+       <li><a class="iphone" href="https://itunes.apple.com/us/app/tutorials-point/id914891263?ls=1&amp;mt=8" target="_blank" rel="nofollow"><img alt="tutorialspoint iPhone App" src="/images/apple_store.jpg" class="mobile-apps"></a></li> 
+       <li><a class="android" href="https://play.google.com/store/apps/details?id=com.tutorialspoint.onlineviewer" target="_blank" rel="nofollow"><img alt="tutorialspoint Android app" src="/images/google_play.jpg" class="mobile-apps"></a></li> 
+       <li><a class="microsoft" href="http://www.windowsphone.com/s?appid=91249671-7184-4ad6-8a5f-d11847946b09" target="_blank" rel="nofollow"><img alt="tutorialspoint Windows app" src="/images/windows_store.jpg" class="mobile-apps"></a></li> 
+      </ul> 
+     </div> 
+     <div class="col-md-2"> 
+      <h4>About us</h4> 
+      <ul class="list icons list-unstyled"> 
+       <li><i class="fa fa-caret-right"></i> <a href="/about/index.htm">Company</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="/about/about_team.htm">Our Team</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="/about/about_careers.htm">Careers</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="/about/about_privacy.htm">Privacy Policy</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="/about/about_cookies.htm">Cookies Policy</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="/about/about_terms_of_use.htm">Terms of use</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="/investors/index.htm">Investors</a></li> 
+      </ul> 
+     </div> 
+     <div class="col-md-2"> 
+      <h4>Extra Links</h4> 
+      <ul class="list icons list-unstyled"> 
+       <li><i class="fa fa-caret-right"></i> <a href="articles">Articles</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="online_dev_tools.htm">Dev Tools</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="free_web_graphics.htm">Free Graphics</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="online_file_conversion.htm">File Conversion</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="shared-tutorials.php">Shared Tutorials</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="https://www.tutorialspoint.com/netmeeting.php">NetMeeting</a></li> 
+       <li><i class="fa fa-caret-right"></i> <a href="https://www.tutorialspoint.com/free_online_whiteboard.htm">Whiteboard</a></li> 
+      </ul> 
+     </div> 
+     <div class="col-md-3"> 
+      <div class="contact-details"> 
+       <h4>Contact Us</h4> 
+       <ul class="contact"> 
+        <li><p><i class="fa fa-map-marker-alt"></i> <strong>Address:</strong> 4th Floor, Incor9 Building, Kavuri Telangana 500081</p></li> 
+        <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="about/contact_us.htm">Click Here</a></p></li> 
+        <li><p><i class="fa fa-globe"></i> <strong>Website:</strong> <a href="http://www.tutorialspoint.com">www.tutorialspoint.com</a></p></li> 
+       </ul> 
+      </div> 
+      <div class="social-icons"> 
+       <ul class="social-icons"> 
+        <li class="facebook"><a href="https://www.facebook.com/tutorialspointindia" target="_blank" data-placement="bottom" title="tutorialspoint @ Facebook">Facebook</a></li> 
+        <li class="twitter"><a href="http://www.twitter.com/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint @ Twitter">Twitter</a></li> 
+        <li class="linkedin"><a href="http://www.linkedin.com/company/tutorialspoint" target="_blank" data-placement="bottom" title="tutorialspoint @ Linkedin">Linkedin</a></li> 
+        <li class="youtube"><a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" data-placement="bottom" title="tutorialspoint YouTube">YouTube</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="footer-copyright"> 
+    <div class="container"> 
+     <div class="row"> 
+      <div class="col-md-1"> <a href="index.htm" class="logo"> <img alt="Tutorials Point" class="img-responsive" src="/scripts/img/logo-footer.png"> </a> 
+      </div> 
+      <div class="col-md-4 col-sm-12 col-xs-12"> 
+       <nav id="sub-menu"> 
+        <ul> 
+         <li><a href="/about/about_privacy.htm">Privacy Policy</a></li> 
+         <li><a href="/about/about_cookies.htm">Cookies Policy</a></li> 
+         <li><a href="/about/contact_us.htm">Contact</a></li> 
+        </ul> 
+       </nav> 
+      </div> 
+      <div class="col-md-3 col-sm-12 col-xs-12"> 
+       <p>© Copyright 2022. All Rights Reserved.</p> 
+      </div> 
+      <div class="col-md-4 col-sm-12 col-xs-12"> 
+       <div class="news-group"> 
+        <input type="text" class="form-control-foot search" name="textemail" id="textemail" autocomplete="off" placeholder="Enter email for newsletter" onfocus="if (this.value == 'Enter email for newsletter...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter email for newsletter...';}"> <span class="input-group-btn"> <button class="btn btn-default btn-footer" id="btnemail" type="submit" onclick="javascript:void(0);">go</button> </span> 
+        <div id="newsresponse"></div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div>  
+  </footer> <!--<link rel="stylesheet" href="https://www.tutorialspoint.com/theme/css/menu-style-min.css?v=1">--> 
+  <script type="text/javascript" src="https://www.tutorialspoint.com/themes/js/custom-min.js?v=1.2"></script> 
+  <script src="https://www.google-analytics.com/urchin.js">
+</script> 
+  <script type="text/javascript">
+_uacct = "UA-232293-6";
+urchinTracker();
+$('.greyout').click(function(){
+   $('.wrapLoader').show();
+});
+</script>  
+ </body>
+</html>
