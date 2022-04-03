@@ -7,6 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/Text Processing"/>
-	<classpathentry kind="lib" path="C:/Users/zeelc/Desktop/jsoup-1.14.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sminal/Downloads/jsoup-1.14.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
