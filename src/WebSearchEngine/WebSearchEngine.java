@@ -35,7 +35,8 @@ public class WebSearchEngine {
 						if (wordToSearch.equals("quit")) {
 							break;
 						} else {
-
+							
+							SearchFrequency.FreqCount(wordToSearch);
 							if (!sc.isCorrect(wordToSearch)) {
 								String s[] = sc.getAltWords(wordToSearch);
 								System.out.println("The word might be misspelled!");
@@ -74,7 +75,8 @@ public class WebSearchEngine {
 						if (wordToSearch.equals("quit")) {
 							break;
 						} else {
-
+							
+							SearchFrequency.FreqCount(wordToSearch);
 							if (!sc.isCorrect(wordToSearch)) {
 								String s[] = sc.getAltWords(wordToSearch);
 								System.out.println("The word might be misspelled!");
