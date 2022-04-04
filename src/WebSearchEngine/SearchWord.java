@@ -47,11 +47,11 @@ public class SearchWord {
 
 	}
 
-	public void searchForWord(String wordToSearch, HashMap<String, String> webPagesNames) {
+	public HashMap<String, Integer> searchForWord(String wordToSearch, HashMap<String, String> webPagesNames) {
 		System.out.println("searching for " + wordToSearch);
 
 		HashMap<String, Integer> textFilesFound = new HashMap<>();
-
+		HashMap<String, Integer> frequencyMapToSort = new HashMap<>();
 		try {
 			File[] textFiles = new File(this.outputPathForText).listFiles();
 
@@ -66,6 +66,7 @@ public class SearchWord {
 				}
 			}
 
+		
 			if (textFilesFound.size() > 0) {
 				for (Map.Entry textFileEntry : textFilesFound.entrySet()) {
 
@@ -80,11 +81,13 @@ public class SearchWord {
 
 					for (Map.Entry webPageEntry : webPagesNames.entrySet()) {
 						if (webPageEntry.getKey().equals(textFileNameWithoutExt)) {
-							System.out.println(webPageEntry.getValue() + "->" + textFileEntry.getValue());
+							frequencyMapToSort.put((String) webPageEntry.getValue(), (Integer) textFileEntry.getValue());
+							System.out.println(webPageEntry.getValue() + " -> " + textFileEntry.getValue());
 							break;
 						}
 					}
-				}
+				} 
+				
 			} else {
 				System.out.println("'" + wordToSearch + "' word couldn't be found");
 			}
@@ -92,5 +95,6 @@ public class SearchWord {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		return frequencyMapToSort;
 	}
 }

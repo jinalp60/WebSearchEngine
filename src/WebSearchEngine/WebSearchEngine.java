@@ -44,7 +44,10 @@ public class WebSearchEngine {
 									System.out.println(s[i]);
 								}
 							} else {
-								searchWord.searchForWord(wordToSearch, webPagesNames);
+								HashMap<String, Integer> frequencyMapToSort = searchWord.searchForWord(wordToSearch, webPagesNames);
+								if(frequencyMapToSort.size() > 0) {
+									PageRanking.sortWebPages(frequencyMapToSort);
+								}
 							}
 
 						}
@@ -80,7 +83,10 @@ public class WebSearchEngine {
 									System.out.println(s[i]);
 								}
 							} else {
-								searchWord.searchForWord(wordToSearch, webPagesNames);
+								HashMap<String, Integer> frequencyMapToSort = searchWord.searchForWord(wordToSearch, webPagesNames);
+								if(frequencyMapToSort.size() > 0) {
+									PageRanking.sortWebPages(frequencyMapToSort);
+								}
 							}
 
 						}
