@@ -94,7 +94,7 @@ public class WebCrawler {
 				writerTxt.close();
 			}
 		}
-		System.out.println(webPagesNames);
+		// System.out.println(webPagesNames);
 
 	}
 
